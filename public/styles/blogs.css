@@ -1,0 +1,24 @@
+.blogs-container {
+    color:white;       
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.blogs-outer-ul {
+    border: 2px dotted red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.blogs-outer-li {
+    border: 2px solid #e2b714;
+    margin: 20px;
+    border-radius: 7px;
+    height: 200px;
+}
+

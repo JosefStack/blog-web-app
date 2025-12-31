@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogPost</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    
+    <div class="header-container">
+        <h1 class="nav-item title text header-title" id="header-title">bloGGer</h1>
+        <a href="/" class="nav-item nav-link nav-home" id="nav-home">Home</a>
+        <a href="/blogs" class="nav-item nav-link nav-blogs" id="nav-blogs">Blogs</a>
+        <a href="/publish" class="nav-item nav-link nav-create" id="nav-create">Create</a>
+        <a href="/about" class="nav-item nav-link nav-about" id="nav-about">About</a>
+        <form action="/search" method="POST" class="nav-item nav-link nav-search" id="nav-search">
+            <input type="text" name="searchKey" placeholder="Search...">
+        </form>
+    </div>
+
+<script src="./script.js"></script>
+    
+</body>
+
+</html>
