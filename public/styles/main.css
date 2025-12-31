@@ -1,5 +1,6 @@
 body {
-    background-color: #1c2023;
+    background-color: #10100e;
+    color: #ffffe3;
     margin: 0;
     padding: 0;
 }
@@ -12,21 +13,16 @@ body {
     font-family: 'Satoshi', sans-serif;
 }
 
-
-
-
-
-
 .home-container, .about-container {
-    position: absolute;
+    /* position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
-    left: 0;
+    left: 0; */
 
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 80vh;
     z-index: -1;
 }

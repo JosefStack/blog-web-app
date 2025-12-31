@@ -1,19 +1,20 @@
 <%- include("header.ejs") %>
 
-    <h1 class="text title blogs-title">Blogs</h1>
+    
     <div class="blogs-container">
+        <h1 class="text title blogs-title">Blogs</h1>
         <ul class="blogs-outer-ul">
             <% blogs.forEach((blog)=> { %>
                 <a href="/blogs/<%= blog.id %>" >
                     <li class="blogs-outer-li">
                     <ul class="blogs-inner-ul">
-                        <li class="blogs-inner-li">
+                        <li class="blogs-inner-li blog-title">
                             <%= blog.title%>
                         </li>
-                        <li class="blogs-inner-li">
+                        <li class="blogs-inner-li blog-author">
                             <%= blog.author%>
                         </li>
-                        <li class="blogs-inner-li">
+                        <li class="blogs-inner-li blog-content">
                             <%= blog.date%>
                         </li>
                     </ul>

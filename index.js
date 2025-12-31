@@ -31,6 +31,21 @@ app.get("/blogs/:id", (req, res) => {
     })
 })
 
+app.post("/search", (req, res) => {
+    console.log("action : search");
+    console.log(req.body.searchKey);
+
+    const searchResults = [];
+
+    blogs.forEach(blog => {
+        if (blog.title === req.body.searchKey) {
+            searchResults.push(blog);
+        }
+    })
+    res.render("partials/blogs.ejs", {
+        blogs: searchResults
+    })
+})
 
 app.get("/publish", (req, res) => {
     res.render("partials/publish.ejs");
@@ -42,7 +57,6 @@ app.get("/about", (req, res) => {
 
 app.post("/publish", (req, res) => {
     res.render("partials/publish.ejs");
-    console.log(req.body);
     blogs.push(
         {   
             id: blogs.length + 1,
@@ -52,7 +66,6 @@ app.post("/publish", (req, res) => {
             date: new Date().getTime()
         }
     )
-    console.log(blogs);
 })
 
 app.listen(port, () => {
